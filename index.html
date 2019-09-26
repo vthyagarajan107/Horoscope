@@ -1,0 +1,206 @@
+<html>
+<title>Horoscope</title>
+<link href="https://fonts.googleapis.com/css?family=Abril+Fatface&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Prompt&display=swap" rel="stylesheet">
+  <style media="screen">
+    body{
+      background-image: url("h.jpg");
+        }
+    #Horoscope{
+      font-size: 40px;
+      color: rgb(255, 153, 0);
+      font-family: 'Abril Fatface', cursive;
+              }
+    #EnterDay{
+      background-color: rgb(230, 184, 0);
+      color: black;
+      font-family: 'Prompt', sans-serif;
+      font-size: 20px;
+      border-width: 3px;
+      border-color: black;
+           }
+    #EnterMonth{
+      background-color: rgb(230, 184, 0);
+      color: black;
+      font-family: 'Prompt', sans-serif;
+      font-size: 20px;
+      border-width: 3px;
+      border-color: black;
+                }
+      #button{
+        background-color: black;
+        font-size: 20px;
+        color: white;
+        font-family: 'Prompt', sans-serif;
+        border-width: 1px;
+        border-color: black;
+            }
+      }
+    #Scorpio{
+       font-family: 'Prompt', sans-serif;
+    }
+  </style>
+  <head>
+    <script>
+      function functiondetsign()
+      {
+        var month = document.getElementById('EnterMonth').value;
+        var day = document.getElementById('EnterDay').value;
+
+        if (month == 11){
+          if (day<= 21){
+            Scorpio();}
+          else if(day>21){
+            Sagittarius();}
+         }
+        else if (month == 10){
+          if (day<=22){
+            Libra();}
+          else if (day>22){
+            Scorpio();}
+        }
+        else if (month == 12){
+          if (day<=21){
+            Sagittarius();}
+          else if (day>21){
+            Capricorn();}
+          }
+        else if (month == 1){
+          if (day<=19){
+            Capricorn();}
+          else if (day>19){
+            Aquarius();}
+            }
+        else if (month == 2){
+          if (day<=18){
+            Aquarius();}
+          else if (day>18){
+            Pisces();}
+            }
+        else if (month == 3){
+          if (day<=20){
+            Pisces();}
+          else if (day>20){
+            Aries();}
+            }
+        else if (month == 4){
+          if (day<=19){
+            Aries();}
+          else if (day>19){
+            Taurus();}
+            }
+        else if (month == 5){
+          if (day<=20){
+            Taurus();}
+          else if (day>20){
+            Gemini();}
+            }
+        else if (month == 6){
+          if (day<=20){
+            Gemini();}
+          else if (day>20){
+            Cancer();}
+            }
+        else if (month == 7){
+          if (day<=22){
+            Cancer();}
+          else if (day>22){
+            Leo();}
+            }
+        else if (month == 8){
+          if (day<=22){
+            Leo();}
+          else if (day>22){
+            Virgo();}
+            }
+        else if (month == 9){
+          if (day<=22){
+            Virgo();}
+          else if (day>22){
+            Libra();}
+            }
+    }
+    function Scorpio(){
+      var pic = "<img src = 'scorpio.jpg' width = '300px' height = '250px'>";
+      document.getElementById('astroSign').innerHTML = pic;
+      var msg = "You're ready for a change and you deserve one from all your hard work."
+      document.getElementById('fortune').innerHTML = msg;
+    }
+
+    function Sagittarius(){
+      var pic = "<img src = 'Sagittarius.jpg' width = '300px' height = '300px'>";
+      document.getElementById('astroSign').innerHTML = pic;
+      var msg = "You've got a great week ahead of you because you might advance in your job."
+      document.getElementById('fortune').innerHTML = msg;
+    }
+    function Libra(){
+      var pic = "<img src = 'libra.jpg' width = '300px' height = '300px'>";
+      document.getElementById('astroSign').innerHTML = pic;
+      var msg = "Keep your communciation clean and concise, or you will get into trouble because of minor problems."
+      document.getElementById('fortune').innerHTML = msg;
+    }
+    function Leo(){
+      var pic = "<img src = 'leo.jpg' width = '400px' height = '250px'>";
+      document.getElementById('astroSign').innerHTML = pic;
+      var msg = "Invest in your money carefully because in the future you might get more if you don't spend it all."
+      document.getElementById('fortune').innerHTML = msg;
+    }
+    function Virgo(){
+      var pic = "<img src = 'virgo.jpg' width = '300px' height = '300px'>";
+      document.getElementById('astroSign').innerHTML = pic;
+      var msg = "You're ready to take on anything because you feel so happy and energized today."
+      document.getElementById('fortune').innerHTML = msg;
+    }
+    function Aquarius(){
+      var pic = "<img src = 'aquarius.jpg' width = '300px' height = '300px'>";
+      document.getElementById('astroSign').innerHTML = pic;
+      var msg = "You've had recent accomplishments and you're in a good point in your life."
+      document.getElementById('fortune').innerHTML = msg;
+    }
+    function Cancer(){
+      var pic = "<img src = 'cancer.jpg' width = '300px' height = '300px'>";
+      document.getElementById('astroSign').innerHTML = pic;
+      var msg = "You will get exciting news, but try to be more secretive about it."
+      document.getElementById('fortune').innerHTML = msg;
+    }
+    function Taurus(){
+      var pic = "<img src = 'taurus.jpg' width = '400px' height = '250px'>";
+      document.getElementById('astroSign').innerHTML = pic;
+      var msg = "You are gonna get recognition for your work, but try not to brag too much."
+      document.getElementById('fortune').innerHTML = msg;
+    }
+    function Pisces(){
+      var pic = "<img src = 'pisces.jpg' width = '300px' height = '300px'>";
+      document.getElementById('astroSign').innerHTML = pic;
+      var msg = "You are very talented and vain, but put some of that aside and be more present with the people around you."
+      document.getElementById('fortune').innerHTML = msg;
+    }
+    function Aries(){
+      var pic = "<img src = 'aries.jpg' width = '400px' height = '200px'>";
+      document.getElementById('astroSign').innerHTML = pic;
+      var msg = "You need to have more quiet time where you can just calm down and mind your own business."
+      document.getElementById('fortune').innerHTML = msg;
+    }
+    function Capricorn(){
+      var pic = "<img src = 'capricorn.jpg' width = '300px' height = '300px'>";
+      document.getElementById('astroSign').innerHTML = pic;
+      var msg = "You could use a spiritual boost right now. Take some time for yourself."
+      document.getElementById('fortune').innerHTML = msg;
+    }
+    function Gemini(){
+       var pic = "<img src = 'gemini.jpg' width = '300px' height = '300px'>";
+       document.getElementById('astroSign').innerHTML = pic;
+       var msg = "You're having money problems right now, so you should ask for help and advice."
+       document.getElementById('fortune').innerHTML = msg;
+    }
+
+    </script>
+  </head>
+  <body>
+    <p id = "Horoscope">Horoscope</p>
+    <input id = "EnterMonth" type = "text" value = "Enter Month">
+    <input id = "EnterDay" type = "text" value = "Enter Day">
+    <input id ="button" type = "button" value = "Your Sign" onclick = "functiondetsign()"><br>
+    <span id = "astroSign"></span><span id = "fortune"></span>
+  </body>
+</html>
